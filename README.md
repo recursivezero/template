@@ -31,4 +31,4 @@ Please update the readme as per your project.
 > :copyright: _RecursiveZero_ Private Limited
 
 <!--  -->
-[readme]: https://github.com/recursivezero/career/blob/main/README.md
+[readme]: https://github.com/recursivezero/template/blob/main/README.md
