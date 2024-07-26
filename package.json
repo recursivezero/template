@@ -1,0 +1,58 @@
+{
+  "name": "@recursivezero/career",
+  "version": "0.0.1",
+  "private": false,
+  "displayName": "Career",
+  "description": "This is a career repository.",
+  "publisher": "@recursivezero",
+  "homepage": "https://github.com/recursivezero/career/blob/main/README.md",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/recursivezero/career/issues",
+    "email": "recursivezero@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/recursivezero/career.git"
+  },
+  "keywords": [
+    "project",
+    "github",
+    "recursive",
+    "zero",
+    "recursivezero"
+  ],
+  "author": {
+    "name": "Recursive Zero",
+    "email": "recursivezero@outlook.com"
+  },
+  "contributors": [{
+    "name": "Keshav Mohta",
+    "email": "xkeshav@gmail.com"
+  }],
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": { 
+    "@xkeshav/day": "latest",
+    "@xkeshav/watch": "latest"
+  },
+  "timestamp": {
+    "createdOn": "Fri, Jul 26, 2024"
+  },
+  "devDependencies": { },
+  "peerDependencies": { },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
