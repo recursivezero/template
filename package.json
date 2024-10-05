@@ -1,6 +1,6 @@
 {
   "name": "@recursivezero/template",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": false,
   "displayName": "RecursiveZeroTemplate",
   "description": "This is a template repository.",
@@ -39,7 +39,7 @@
     "@xkeshav/watch": "latest"
   },
   "timestamp": {
-    "createdOn": "Fri, Jul 26, 2024"
+    "createdOn": "Fri, Oct 05, 2024"
   },
   "devDependencies": { },
   "peerDependencies": { },
