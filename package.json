@@ -1,19 +1,19 @@
 {
-  "name": "@recursivezero/career",
-  "version": "0.0.1",
+  "name": "@recursivezero/template",
+  "version": "1.0.0",
   "private": false,
-  "displayName": "Career",
-  "description": "This is a career repository.",
+  "displayName": "RecursiveZeroTemplate",
+  "description": "This is a template repository.",
   "publisher": "@recursivezero",
-  "homepage": "https://github.com/recursivezero/career/blob/main/README.md",
+  "homepage": "https://github.com/recursivezero/template/blob/main/README.md",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/recursivezero/career/issues",
+    "url": "https://github.com/recursivezero/template/issues",
     "email": "recursivezero@outlook.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/recursivezero/career.git"
+    "url": "https://github.com/recursivezero/template.git"
   },
   "keywords": [
     "project",
