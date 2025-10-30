@@ -9,7 +9,7 @@ PREFIX="TZF"
 
 YEAR=$(date +%y)
 PADDED_NUM=$(printf "%04d" "$ISSUE_NUMBER")
-IDENTIFIER="${PREFIX}-${YEAR}${PADDED_NUM}"
+IDENTIFIER="${PREFIX}-${YEAR}${PADDED_NUM}:"
 
 # Skip if already present
 if echo "$OLD_TITLE" | grep -q "$IDENTIFIER"; then
@@ -17,8 +17,9 @@ if echo "$OLD_TITLE" | grep -q "$IDENTIFIER"; then
   exit 0
 fi
 
-# Replace placeholder at start if provided
+# Determine new title
 if [ -n "$PLACEHOLDER" ] && echo "$OLD_TITLE" | grep -q "^$PLACEHOLDER"; then
+  # Replace placeholder at start
   NEW_TITLE=$(echo "$OLD_TITLE" | sed "s/^$PLACEHOLDER[[:space:]]*/$IDENTIFIER /")
 else
   # Insert after emoji if present
