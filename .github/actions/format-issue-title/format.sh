@@ -22,7 +22,7 @@ if [ -n "$PLACEHOLDER" ] && echo "$OLD_TITLE" | grep -q "^$PLACEHOLDER"; then
   NEW_TITLE=$(echo "$OLD_TITLE" | sed "s/^$PLACEHOLDER[[:space:]]*/$IDENTIFIER /")
 else
   # Insert after emoji if present
-  if [[ "$OLD_TITLE" =~ ^([[:space:]]*[\xF0-\xF7][\x80-\xBF]+[[:space:]]*)(.*) ]]; then
+  if [[ "$OLD_TITLE" =~ ^([[:space:]]*[^[:alnum:][:space:]]+[[:space:]]*)(.*) ]]; then
     EMOJI="${BASH_REMATCH[1]}"
     REST="${BASH_REMATCH[2]}"
     NEW_TITLE="${EMOJI}${IDENTIFIER} ${REST}"
