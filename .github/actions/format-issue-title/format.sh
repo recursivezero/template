@@ -17,9 +17,8 @@ if echo "$OLD_TITLE" | grep -q "$IDENTIFIER"; then
   exit 0
 fi
 
-# Determine new title
+# Replace placeholder at start if provided
 if [ -n "$PLACEHOLDER" ] && echo "$OLD_TITLE" | grep -q "^$PLACEHOLDER"; then
-  # Replace placeholder at start
   NEW_TITLE=$(echo "$OLD_TITLE" | sed "s/^$PLACEHOLDER[[:space:]]*/$IDENTIFIER /")
 else
   # Insert after emoji if present
