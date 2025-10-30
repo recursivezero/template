@@ -22,5 +22,6 @@ runs:
         "${{ github.action_path }}/format.sh" \
           "${{ github.event.issue.number }}" \
           "${{ github.event.issue.title }}" \
+          "${{ inputs.prefix }}" \
           "${{ inputs.placeholder }}" \
           "${{ inputs.dry_run }}"

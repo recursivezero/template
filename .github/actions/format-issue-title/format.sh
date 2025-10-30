@@ -3,9 +3,14 @@ set -e
 
 ISSUE_NUMBER=$1
 OLD_TITLE=$2
-PLACEHOLDER=$3
-DRY_RUN=$4
-PREFIX="TZF"
+PREFIX=$3
+PLACEHOLDER=$4
+DRY_RUN=$5
+
+# Fallback to default if prefix is empty
+if [ -z "$PREFIX" ]; then
+  PREFIX="GEN"
+fi
 
 YEAR=$(date +%y)
 PADDED_NUM=$(printf "%04d" "$ISSUE_NUMBER")
