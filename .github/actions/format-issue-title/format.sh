@@ -14,7 +14,7 @@ fi
 
 YEAR=$(date +%y)
 PADDED_NUM=$(printf "%04d" "$ISSUE_NUMBER")
-IDENTIFIER="${PREFIX}-${YEAR}${PADDED_NUM}:"
+IDENTIFIER="[${PREFIX}-${YEAR}${PADDED_NUM}]: "
 
 # Skip if already present
 if echo "$OLD_TITLE" | grep -q "$IDENTIFIER"; then
@@ -24,15 +24,15 @@ fi
 
 # Replace placeholder at start if provided
 if [ -n "$PLACEHOLDER" ] && echo "$OLD_TITLE" | grep -q "^$PLACEHOLDER"; then
-  NEW_TITLE=$(echo "$OLD_TITLE" | sed "s/^$PLACEHOLDER[[:space:]]*/$IDENTIFIER /")
+  NEW_TITLE=$(echo "$OLD_TITLE" | sed "s/^$PLACEHOLDER[[:space:]]*/$IDENTIFIER/")
 else
   # Insert after emoji if present
   if [[ "$OLD_TITLE" =~ ^([[:space:]]*[^[:alnum:][:space:]]+[[:space:]]*)(.*) ]]; then
     EMOJI="${BASH_REMATCH[1]}"
     REST="${BASH_REMATCH[2]}"
-    NEW_TITLE="${EMOJI}${IDENTIFIER} ${REST}"
+    NEW_TITLE="${EMOJI} ${IDENTIFIER}${REST}"
   else
-    NEW_TITLE="${IDENTIFIER} ${OLD_TITLE}"
+    NEW_TITLE="${IDENTIFIER}${OLD_TITLE}"
   fi
 fi
 

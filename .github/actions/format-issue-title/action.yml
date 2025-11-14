@@ -1,5 +1,6 @@
 name: "Format Issue ID"
 description: "Replaces placeholder or appends formatted ID to GitHub issue titles"
+
 inputs:
   prefix:
     description: "Prefix for the identifier (e.g., TZF)"
@@ -11,12 +12,13 @@ inputs:
     description: "If true, logs the new title but doesn't update"
     required: false
     default: "false"
+
 runs:
   using: "composite"
   steps:
     - shell: bash
       env:
-        GH_TOKEN: ${{ env.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ github.token }}
       run: |
         chmod +x "${{ github.action_path }}/format.sh"
         "${{ github.action_path }}/format.sh" \
