@@ -1,6 +1,6 @@
 {
   "name": "@recursivezero/template",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "displayName": "RecursiveZeroTemplate",
   "description": "This is a template repository.",
@@ -26,15 +26,15 @@
     "name": "Recursive Zero",
     "email": "recursivezero@outlook.com"
   },
-  "contributors": [{
-    "name": "Keshav Mohta",
-    "email": "xkeshav@gmail.com"
-  }],
+  "contributors": [ {
+      "name": "Keshav Mohta",
+      "email": "xkeshav@gmail.com"
+    } ],
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
-  "dependencies": { 
+  "dependencies": {
     "@xkeshav/day": "latest",
     "@xkeshav/watch": "latest"
   },
