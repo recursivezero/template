@@ -112,7 +112,7 @@
     "editor.minimap.enabled": true,
     "workbench.colorTheme": "Tokyo Night Storm",
     "editor.fontSize": 14,
-    "[javascriptreact]": {},
+    "[javascriptreact]": { },
     "editor.accessibilitySupport": "off",
     "editor.minimap.size": "fit",
     "cSpell.customDictionaries": {
@@ -155,7 +155,7 @@
       "tab.activeBorder": "#2f7c47"
     },
     "peacock.color": "#215732",
-    "cSpell.words": [],
+    "cSpell.words": [ ],
     "css.lint.unknownAtRules": "ignore",
     "files.autoSave": "onFocusChange",
     "editor.dragAndDrop": false,
@@ -201,5 +201,6 @@
     "files.associations": {
       "CODEOWNERS": "plaintext",
     },
+    "explorer.compactFolders": false,
   },
 }
