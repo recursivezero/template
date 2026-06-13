@@ -202,5 +202,6 @@
       "CODEOWNERS": "plaintext",
     },
     "explorer.compactFolders": false,
+    "folder-color.pathColors": [ ],
   },
 }
